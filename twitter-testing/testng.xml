@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Twitter">
+    <parameter name="email" value=""/>
+    <parameter name="password" value=""/>
+    <parameter name="hashtag" value="#yyttest123456"/>
+    <test name="Twitter" preserve-order="true">
+        <classes>
+            <class name="TestTwitter">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="trendsTest"/>
+                    <include name="tweetTest"/>
+                    <include name="deleteTweetsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
